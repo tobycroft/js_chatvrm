@@ -30,7 +30,7 @@ canvas.width = window.innerWidth;
 canvas.style.cssText = "width:100vw; height:100vh; display:block;";
 document.body.appendChild(canvas);
 
-let defaultVrmUrl = "https://raw.githubusercontent.com/josephrocca/ChatVRM-js/main/avatars/AvatarSample_B.vrm";
+let defaultVrmUrl = "https://ai.aerofsx.com:444/vrm/avatars/AvatarSample_B.vrm";
 
 viewer.setup(canvas);
 await viewer.loadVrm(oc.character.customData.vrmUrl || defaultVrmUrl);
