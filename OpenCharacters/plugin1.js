@@ -3,7 +3,7 @@ let [
   prompt2,
 ] = await Promise.all([
   import("https://vrm.ai.aerofsx.com:444/features/vrmViewer/viewer.js").then(m => m.Viewer),
-  import("//cdn.jsdelivr.net/gh/josephrocca/prompt2@v0.0.8/mod.js").then(m => m.default),
+  import("https://vrm.ai.aerofsx.com:444/mod.js").then(m => m.default),
 ]);
 
 window.onerror = async function(errorMsg, url, lineNumber, columnNumber, errorObj) {
