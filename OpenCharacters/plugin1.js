@@ -174,7 +174,7 @@ async function textToSpeechAndActions(text) {
       } else {
         let numWords = chunk.text.split(" ").length / 2;
         let filename = roundToNearestOfSet(numWords, [3, 6, 12, 24]) + ".mp3";
-        bufferPromise = fetch(`//cdn.jsdelivr.net/gh/josephrocca/ChatVRM-js@v0.0.22/OpenCharacters/dummy-audio/${filename}`).then(r => r.arrayBuffer());
+        bufferPromise = fetch(`https://vrm.ai.aerofsx.com:444/OpenCharacters/dummy-audio/${filename}`).then(r => r.arrayBuffer());
       }
       speechActionChunks.push({bufferPromise, expression:lastExpression, text:chunk.text, volume});
     }
